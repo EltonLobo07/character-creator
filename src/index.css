@@ -30,3 +30,23 @@ body {
   padding: 0;
   border: 0;
 }
+
+.fixed {
+  position: fixed;
+}
+
+.bg-light-gray {
+  background-color: hsl(195deg, 20%, 86%)
+}
+
+.top-60percent {
+  top: 60%;
+} 
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.w-full {
+  width: 100%;
+}
