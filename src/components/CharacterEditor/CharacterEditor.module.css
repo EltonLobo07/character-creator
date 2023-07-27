@@ -26,12 +26,44 @@
 
 .characterWrapper {
   display: inline-block;
-  /*border: 1px solid black;*/
   min-height: 500px;
-  min-width: 400px;
+  width: 400px;
   position: fixed;
 }
 
 .controlColumn {
   width: 50%;
+}
+
+@media (max-width: 512px) {
+  .characterEditor {
+    padding-top: 32px;
+    padding-bottom: 16px;
+    position: relative;
+  }
+
+  .header {
+    padding-bottom: 16px;
+  }
+
+  .header, .characterWrapper {
+    display: block;
+  }
+
+  .characterWrapper {
+    position: relative;
+    width: 300px;
+  }
+
+  .controlColumn {
+    position: absolute;
+    display: flex;
+    column-gap: 8px;
+    width: 80%;
+    overflow-x: auto;
+
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 128px;
+  }
 }
